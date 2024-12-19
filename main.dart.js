@@ -25023,8 +25023,11 @@ a42:function a42(){},
 a43:function a43(){},
 kD:function kD(a,b){this.a=a
 this.b=b},
-a9U:function a9U(a,b){this.a=a
-this.d=b},
+a9U:function a9U(a,b,c,d){var _=this
+_.a=a
+_.b=b
+_.c=c
+_.d=d},
 fH:function fH(a,b){this.a=a
 this.b=b},
 a8W:function a8W(a){this.a=a},
@@ -78573,7 +78576,7 @@ A.ajM.prototype={
 $0(){var s=0,r=A.N(t.H)
 var $async$$0=A.J(function(a,b){if(a===1)return A.K(b,r)
 while(true)switch(s){case 0:s=2
-return A.P($.au5().ej(0,new A.a9U(B.i_,1),"rec.m4a"),$async$$0)
+return A.P($.au5().ej(0,new A.a9U(B.i_,24e3,22050,1),"rec.wav"),$async$$0)
 case 2:return A.L(null,r)}})
 return A.M($async$$0,r)},
 $S:10}
@@ -81733,7 +81736,7 @@ return B.jd.j1("create",A.ar(["recorderId",b],s,s),!1,t.H)},
 IO(a,b,c,d){var s=t.N,r=t.z,q=A.r(s,r)
 q.m(0,"recorderId",b)
 q.m(0,"path",d)
-q.N(0,A.ar(["encoder",c.a.b,"bitRate",128e3,"sampleRate",44100,"numChannels",c.d,"device",null,"autoGain",!1,"echoCancel",!1,"noiseSuppress",!1,"androidConfig",A.ar(["useLegacy",!1,"muteAudio",!1,"manageBluetooth",!0,"audioSource","defaultSource"],s,r),"iosConfig",B.zD.A3()],s,r))
+q.N(0,A.ar(["encoder",c.a.b,"bitRate",c.b,"sampleRate",c.c,"numChannels",c.d,"device",null,"autoGain",!1,"echoCancel",!1,"noiseSuppress",!1,"androidConfig",A.ar(["useLegacy",!1,"muteAudio",!1,"manageBluetooth",!0,"audioSource","defaultSource"],s,r),"iosConfig",B.zD.A3()],s,r))
 return B.jd.j1("start",q,!1,t.H)},
 ol(a,b){return this.XG(0,b)},
 XG(a,b){var s=0,r=A.N(t.T),q,p
@@ -81830,35 +81833,36 @@ break
 case 1:return A.L(q,r)}})
 return A.M($async$l,r)},
 ej(a,b,c){return this.Xy(0,b,c)},
-Xy(a,b,c){var s=0,r=A.N(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e
-var $async$ej=A.J(function(d,a0){if(d===1){p.push(a0)
-s=q}while(true)switch(s){case 0:f=o.a
-if(f!=null)f.stop()
+Xy(a,b,c){var s=0,r=A.N(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d
+var $async$ej=A.J(function(a0,a1){if(a0===1){p.push(a1)
+s=q}while(true)switch(s){case 0:e=o.a
+if(e!=null)e.stop()
 s=2
 return A.P(o.mV(),$async$ej)
 case 2:q=4
 s=7
 return A.P(o.yY(b),$async$ej)
-case 7:n=a0
-f=b.a
-m=A.aB1(f)
-if(m==null){f=f.k(0)
-throw A.e(f+" not supported.")}f=self
-l=new f.MediaRecorder(n,{mimeType:m,audioBitsPerSecond:128e3,bitsPerSecond:128e3})
+case 7:n=a1
+e=b.a
+m=A.aB1(e)
+if(m==null){e=e.k(0)
+throw A.e(e+" not supported.")}e=self
+j=b.b
+l=new e.MediaRecorder(n,{mimeType:m,audioBitsPerSecond:j,bitsPerSecond:j})
 l.ondataavailable=A.bA(new A.a7A(o))
 l.onstop=A.bA(new A.a7B(o))
 o.e.mF(0)
 l.start(200)
-j=new f.AudioContext()
-i=j.createMediaStreamSource(n)
-h=j.createAnalyser()
-h.minDecibels=-160
-h.maxDecibels=0
-h.fftSize=1024
-h.smoothingTimeConstant=0.3
-i.connect(h)
-o.r=j
-o.w=h
+i=new e.AudioContext()
+h=i.createMediaStreamSource(n)
+g=i.createAnalyser()
+g.minDecibels=-160
+g.maxDecibels=0
+g.fftSize=1024
+g.smoothingTimeConstant=0.3
+h.connect(g)
+o.r=i
+o.w=g
 o.a=l
 o.b=n
 o.y=b
@@ -81867,8 +81871,8 @@ q=1
 s=6
 break
 case 4:q=3
-e=p.pop()
-k=A.an(e)
+d=p.pop()
+k=A.an(d)
 o.mV()
 A.Xl().$1(J.d0(k))
 s=6
@@ -81898,7 +81902,7 @@ while(true)switch(s){case 0:s=q.c.length!==0?2:4
 break
 case 2:p=q.e
 if(p.b==null)p.b=$.tE.$0()
-s=B.i_===q.y.a?6:7
+s=B.kK===q.y.a?6:7
 break
 case 6:o=self
 s=8
@@ -81965,34 +81969,35 @@ break
 case 1:return A.L(q,r)}})
 return A.M($async$cc,r)},
 rB(a,b){return this.acW(0,b)},
-acW(a,b){var s=0,r=A.N(t.H),q=this,p,o,n,m,l,k,j
+acW(a,b){var s=0,r=A.N(t.H),q=this,p,o,n,m,l,k,j,i
 var $async$rB=A.J(function(c,d){if(c===1)return A.K(d,r)
 while(true)switch(s){case 0:s=2
 return A.P(q.yY(b),$async$rB)
-case 2:k=q.b=d
-j=self
-switch(B.d.n(j.window.navigator.userAgent.toLowerCase(),"firefox")){case!0:p=new j.AudioContext()
+case 2:j=q.b=d
+i=self
+switch(B.d.n(i.window.navigator.userAgent.toLowerCase(),"firefox")){case!0:p=new i.AudioContext()
 break
-case!1:p=new j.AudioContext({sampleRate:44100})
+case!1:p=new i.AudioContext({sampleRate:b.c})
 break
-default:p=null}o=p.createMediaStreamSource(k)
+default:p=null}o=p.createMediaStreamSource(j)
 s=3
 return A.P(A.fm(p.audioWorklet.addModule("assets/packages/record_web/assets/js/record.worklet.js"),t.X),$async$rB)
-case 3:j=j.AudioWorkletNode
+case 3:i=i.AudioWorkletNode
 n=b.d
-m=A.aH(A.ar(["numChannels",n,"sampleRate",44100],t.N,t.i))
-m.toString
-l=new j(p,"recorder.worklet",{parameterData:t.v.a(m)})
-m=o.connect(l)
-if(m!=null)m.connect(p.destination)
-j=q.r
-if(j!=null)j.xL()
-j=b.a
-if(j===B.kK)q.r=new A.afM(44100,n,A.b([],t.t))
-else if(j===B.kL)q.r=new A.a8W(A.b([],t.t))
-l.port.onmessage=A.bA(new A.a7I(q))
+m=b.c
+l=A.aH(A.ar(["numChannels",n,"sampleRate",m],t.N,t.i))
+l.toString
+k=new i(p,"recorder.worklet",{parameterData:t.v.a(l)})
+l=o.connect(k)
+if(l!=null)l.connect(p.destination)
+i=q.r
+if(i!=null)i.xL()
+i=b.a
+if(i===B.i_)q.r=new A.afM(m,n,A.b([],t.t))
+else if(i===B.kL)q.r=new A.a8W(A.b([],t.t))
+k.port.onmessage=A.bA(new A.a7I(q))
 q.c=p
-q.b=k
+q.b=j
 q.a.$1(B.jq)
 return A.L(null,r)}})
 return A.M($async$rB,r)},
@@ -82028,7 +82033,7 @@ while(true)switch(s){case 0:o=A.r(t.N,t.K)
 o.m(0,"autoGainControl",!1)
 o.m(0,"echoCancellation",!1)
 o.m(0,"noiseSuppression",!1)
-o.m(0,"sampleRate",44100)
+o.m(0,"sampleRate",a.c)
 o.m(0,"sampleSize",16)
 o.m(0,"channelCount",a.d)
 o=A.aH(o)
@@ -85057,8 +85062,8 @@ B.hY=new A.wK(0,"polite")
 B.yI=new A.Hc(0,"polite")
 B.hZ=new A.wK(1,"assertive")
 B.kJ=new A.Hc(1,"assertive")
-B.i_=new A.hH(5,"opus")
-B.kK=new A.hH(7,"wav")
+B.kK=new A.hH(5,"opus")
+B.i_=new A.hH(7,"wav")
 B.kL=new A.hH(8,"pcm16bits")
 B.kM=new A.hI(0,"mp3")
 B.e2=A.b(s([]),t.s)
@@ -86820,7 +86825,7 @@ B.E2=A.b(s(["audio/webm; codecs=opus","audio/opus; codecs=opus","audio/opus"]),t
 B.DH=A.b(s(["audio/flac","audio/x-flac"]),t.s)
 B.Fl=A.b(s(["audio/wav","audio/wav; codecs=1","audio/vnd.wave; codec=1"]),t.s)
 B.Ez=A.b(s(["audio/pcm","audio/webm; codecs=pcm"]),t.s)
-B.Hc=new A.cO([B.yJ,B.iR,B.yK,B.iR,B.yL,B.iR,B.yM,B.EL,B.yN,B.ES,B.i_,B.E2,B.yO,B.DH,B.kK,B.Fl,B.kL,B.Ez],A.ac("cO<hH,A<k>>"))
+B.Hc=new A.cO([B.yJ,B.iR,B.yK,B.iR,B.yL,B.iR,B.yM,B.EL,B.yN,B.ES,B.kK,B.E2,B.yO,B.DH,B.i_,B.Fl,B.kL,B.Ez],A.ac("cO<hH,A<k>>"))
 B.HH={BU:0,DD:1,FX:2,TP:3,YD:4,ZR:5}
 B.bM=new A.bJ(B.HH,["MM","DE","FR","TL","YE","CD"],t.li)
 B.Iw=new A.p(458752)
