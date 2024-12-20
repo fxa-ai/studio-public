@@ -79384,12 +79384,8 @@ $1(a){var s=null,r=A.cQ(a.a.ia(0),s,s,s,s,s,s)
 return A.asv(!1,s,!0,s,!0,s,!0,!1,s,s,s,!1,s,s,s,A.cQ(a.a.i9(1).HN().VT().k(0),s,s,s,s,s,s),s,r,A.oX(s,s,A.jr(B.Dh,s),s,s,new A.ako(a),s,s,"\u062f\u0627\u0646\u0644\u0648\u062f"),s)},
 $S:483}
 A.ako.prototype={
-$0(){var s=0,r=A.N(t.H),q=this
-var $async$$0=A.J(function(a,b){if(a===1)return A.K(b,r)
-while(true)switch(s){case 0:A.auo(q.a.a.ia(3))
-return A.L(null,r)}})
-return A.M($async$$0,r)},
-$S:10}
+$0(){A.auo(this.a.a.ia(3))},
+$S:0}
 A.pd.prototype={
 ah(){return new A.RG(new A.C0(B.y5,$.ar()))}}
 A.RG.prototype={
