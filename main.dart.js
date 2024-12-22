@@ -25374,11 +25374,8 @@ a4M:function a4M(){},
 a4N:function a4N(){},
 kN:function kN(a,b){this.a=a
 this.b=b},
-aaM:function aaM(a,b,c,d){var _=this
-_.a=a
-_.b=b
-_.c=c
-_.d=d},
+aaM:function aaM(a,b){this.a=a
+this.d=b},
 fP:function fP(a,b){this.a=a
 this.b=b},
 a9M:function a9M(a){this.a=a},
@@ -79872,7 +79869,7 @@ A.amW.prototype={
 $0(){var s=0,r=A.L(t.H),q=this,p
 var $async$$0=A.H(function(a,b){if(a===1)return A.I(b,r)
 while(true)switch(s){case 0:s=2
-return A.N($.arN().el(0,new A.aaM(B.i2,24e3,22050,1),"rec.wav"),$async$$0)
+return A.N($.arN().el(0,new A.aaM(B.i2,1),"rec.wav"),$async$$0)
 case 2:p=q.a
 p.e=new A.dJ(Date.now(),0,!1)
 p.ao(new A.amV(p))
@@ -83025,7 +83022,7 @@ return A.K($async$ud,r)},
 Je(a,b,c,d){var s=t.N,r=t.z,q=A.r(s,r)
 q.m(0,"recorderId",b)
 q.m(0,"path",d)
-q.N(0,A.aq(["encoder",c.a.b,"bitRate",c.b,"sampleRate",c.c,"numChannels",c.d,"device",null,"autoGain",!1,"echoCancel",!1,"noiseSuppress",!1,"androidConfig",A.aq(["useLegacy",!1,"muteAudio",!1,"manageBluetooth",!0,"audioSource","defaultSource"],s,r),"iosConfig",B.zQ.Al()],s,r))
+q.N(0,A.aq(["encoder",c.a.b,"bitRate",128e3,"sampleRate",44100,"numChannels",c.d,"device",null,"autoGain",!1,"echoCancel",!1,"noiseSuppress",!1,"androidConfig",A.aq(["useLegacy",!1,"muteAudio",!1,"manageBluetooth",!0,"audioSource","defaultSource"],s,r),"iosConfig",B.zQ.Al()],s,r))
 return B.fU.hK("start",q,!1,t.H)},
 ow(a,b){return this.Yb(0,b)},
 Yb(a,b){var s=0,r=A.L(t.T),q,p
@@ -83130,36 +83127,35 @@ break
 case 1:return A.J(q,r)}})
 return A.K($async$hn,r)},
 el(a,b,c){return this.Y1(0,b,c)},
-Y1(a,b,c){var s=0,r=A.L(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e,d
-var $async$el=A.H(function(a0,a1){if(a0===1){p.push(a1)
-s=q}while(true)switch(s){case 0:e=o.a
-if(e!=null)e.stop()
+Y1(a,b,c){var s=0,r=A.L(t.H),q=1,p=[],o=this,n,m,l,k,j,i,h,g,f,e
+var $async$el=A.H(function(d,a0){if(d===1){p.push(a0)
+s=q}while(true)switch(s){case 0:f=o.a
+if(f!=null)f.stop()
 s=2
 return A.N(o.mZ(),$async$el)
 case 2:q=4
 s=7
 return A.N(o.zd(b),$async$el)
-case 7:n=a1
-e=b.a
-m=A.aCN(e)
-if(m==null){e=e.k(0)
-throw A.d(e+" not supported.")}e=self
-j=b.b
-l=new e.MediaRecorder(n,{mimeType:m,audioBitsPerSecond:j,bitsPerSecond:j})
+case 7:n=a0
+f=b.a
+m=A.aCN(f)
+if(m==null){f=f.k(0)
+throw A.d(f+" not supported.")}f=self
+l=new f.MediaRecorder(n,{mimeType:m,audioBitsPerSecond:128e3,bitsPerSecond:128e3})
 l.ondataavailable=A.br(new A.a8j(o))
 l.onstop=A.br(new A.a8k(o))
 o.e.mJ(0)
 l.start(200)
-i=new e.AudioContext()
-h=i.createMediaStreamSource(n)
-g=i.createAnalyser()
-g.minDecibels=-160
-g.maxDecibels=0
-g.fftSize=1024
-g.smoothingTimeConstant=0.3
-h.connect(g)
-o.r=i
-o.w=g
+j=new f.AudioContext()
+i=j.createMediaStreamSource(n)
+h=j.createAnalyser()
+h.minDecibels=-160
+h.maxDecibels=0
+h.fftSize=1024
+h.smoothingTimeConstant=0.3
+i.connect(h)
+o.r=j
+o.w=h
 o.a=l
 o.b=n
 o.y=b
@@ -83168,8 +83164,8 @@ q=1
 s=6
 break
 case 4:q=3
-d=p.pop()
-k=A.al(d)
+e=p.pop()
+k=A.al(e)
 o.mZ()
 A.XR().$1(J.d3(k))
 s=6
@@ -83274,35 +83270,34 @@ break
 case 1:return A.J(q,r)}})
 return A.K($async$ce,r)},
 rE(a,b){return this.adx(0,b)},
-adx(a,b){var s=0,r=A.L(t.H),q=this,p,o,n,m,l,k,j,i
+adx(a,b){var s=0,r=A.L(t.H),q=this,p,o,n,m,l,k,j
 var $async$rE=A.H(function(c,d){if(c===1)return A.I(d,r)
 while(true)switch(s){case 0:s=2
 return A.N(q.zd(b),$async$rE)
-case 2:j=q.b=d
-i=self
-switch(B.d.n(i.window.navigator.userAgent.toLowerCase(),"firefox")){case!0:p=new i.AudioContext()
+case 2:k=q.b=d
+j=self
+switch(B.d.n(j.window.navigator.userAgent.toLowerCase(),"firefox")){case!0:p=new j.AudioContext()
 break
-case!1:p=new i.AudioContext({sampleRate:b.c})
+case!1:p=new j.AudioContext({sampleRate:44100})
 break
-default:p=null}o=p.createMediaStreamSource(j)
+default:p=null}o=p.createMediaStreamSource(k)
 s=3
 return A.N(A.fv(p.audioWorklet.addModule("assets/packages/record_web/assets/js/record.worklet.js"),t.X),$async$rE)
-case 3:i=i.AudioWorkletNode
+case 3:j=j.AudioWorkletNode
 n=b.d
-m=b.c
-l=A.aJ(A.aq(["numChannels",n,"sampleRate",m],t.N,t.i))
-l.toString
-k=new i(p,"recorder.worklet",{parameterData:t.m.a(l)})
-l=o.connect(k)
-if(l!=null)l.connect(p.destination)
-i=q.r
-if(i!=null)i.xZ()
-i=b.a
-if(i===B.i2)q.r=new A.agL(m,n,A.b([],t.t))
-else if(i===B.kO)q.r=new A.a9M(A.b([],t.t))
-k.port.onmessage=A.br(new A.a8t(q))
+m=A.aJ(A.aq(["numChannels",n,"sampleRate",44100],t.N,t.i))
+m.toString
+l=new j(p,"recorder.worklet",{parameterData:t.m.a(m)})
+m=o.connect(l)
+if(m!=null)m.connect(p.destination)
+j=q.r
+if(j!=null)j.xZ()
+j=b.a
+if(j===B.i2)q.r=new A.agL(44100,n,A.b([],t.t))
+else if(j===B.kO)q.r=new A.a9M(A.b([],t.t))
+l.port.onmessage=A.br(new A.a8t(q))
 q.c=p
-q.b=j
+q.b=k
 q.a.$1(B.jt)
 return A.J(null,r)}})
 return A.K($async$rE,r)},
@@ -83338,7 +83333,7 @@ while(true)switch(s){case 0:o=A.r(t.N,t.K)
 o.m(0,"autoGainControl",!1)
 o.m(0,"echoCancellation",!1)
 o.m(0,"noiseSuppression",!1)
-o.m(0,"sampleRate",a.c)
+o.m(0,"sampleRate",44100)
 o.m(0,"sampleSize",16)
 o.m(0,"channelCount",a.d)
 o=A.aJ(o)
