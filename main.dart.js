@@ -81470,7 +81470,7 @@ return A.M($.HT().r5(0,"AUTH_TOKEN"),$async$$1)
 case 2:p=c
 s=3
 return A.M(A.YS(p==null?"":p),$async$$1)
-case 3:o=c?"/":"/login"
+case 3:o=c?"/":"/jwt"
 n=q.a.c
 if(n!=null)A.KO(n).lB(0,o)
 return A.H(null,r)}})
