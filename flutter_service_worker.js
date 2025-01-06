@@ -10,7 +10,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d18c2640e346152390bc4580ab88abe1
 "assets/fonts/MaterialIcons-Regular.otf": "f283a13d92fb7903ffa1baf189940192",
 "assets/fonts/YekanBakh-Bold.otf": "94a1317a1bf6629537d220697d11a4f3",
 "assets/fonts/YekanBakh-Regular.ttf": "0c5382b544b01c1f7366adf30af5e2ef",
-"assets/NOTICES": "57e15450525a4452e74b76033f1dcf1e",
+"assets/NOTICES": "d9be215d78f6c8caf99bb1c62c69226d",
 "assets/packages/record_web/assets/js/record.fixwebmduration.js": "1f0108ea80c8951ba702ced40cf8cdce",
 "assets/packages/record_web/assets/js/record.worklet.js": "356bcfeddb8a625e3e2ba43ddf1cc13e",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
@@ -33,9 +33,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "d18c2640e346152390bc4580ab88abe1
 "icons/Icon-512.png": "09d31f8359c490a24a9ba012434e3937",
 "icons/Icon-maskable-192.png": "0b17b4078f19f727cda55e23ec5cf6c5",
 "icons/Icon-maskable-512.png": "09d31f8359c490a24a9ba012434e3937",
-"index.html": "2b152df56d895c8ded7a6953866bf776",
-"/": "2b152df56d895c8ded7a6953866bf776",
-"main.dart.js": "2f60c5ab4743093a1fd369bd618aca99",
+"index.html": "1b48e076ee41e7a57e07f5a041adb831",
+"/": "1b48e076ee41e7a57e07f5a041adb831",
+"main.dart.js": "0625aed987e4065255ec56bc08c6aeb1",
 "manifest.json": "9de07508b5049e6206ca38d6f73f5b5d",
 "version.json": "20b39d34b01de1d6b9d4105d01e38cf1"};
 // The application shell files that are downloaded before a service worker can
