@@ -7,10 +7,10 @@ const RESOURCES = {"assets/AssetManifest.bin": "d18c2640e346152390bc4580ab88abe1
 "assets/AssetManifest.bin.json": "318f4c7bafe0110124c7d40683c13b81",
 "assets/AssetManifest.json": "2ac2f50db050f6a80a90a61e278cfb4d",
 "assets/FontManifest.json": "9af6c5a45afb70fc3b23bc846d2d970b",
-"assets/fonts/MaterialIcons-Regular.otf": "f283a13d92fb7903ffa1baf189940192",
+"assets/fonts/MaterialIcons-Regular.otf": "d4c97d8ec6e9097716c54f6680d982e2",
 "assets/fonts/YekanBakh-Bold.otf": "94a1317a1bf6629537d220697d11a4f3",
 "assets/fonts/YekanBakh-Regular.ttf": "0c5382b544b01c1f7366adf30af5e2ef",
-"assets/NOTICES": "c73fef097b77050ddbe4dc728e3a5a86",
+"assets/NOTICES": "ea67f2c79984101e001effe2d41cc113",
 "assets/packages/record_web/assets/js/record.fixwebmduration.js": "1f0108ea80c8951ba702ced40cf8cdce",
 "assets/packages/record_web/assets/js/record.worklet.js": "356bcfeddb8a625e3e2ba43ddf1cc13e",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
@@ -33,10 +33,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "d18c2640e346152390bc4580ab88abe1
 "icons/Icon-512.png": "09d31f8359c490a24a9ba012434e3937",
 "icons/Icon-maskable-192.png": "0b17b4078f19f727cda55e23ec5cf6c5",
 "icons/Icon-maskable-512.png": "09d31f8359c490a24a9ba012434e3937",
-"index.html": "1b48e076ee41e7a57e07f5a041adb831",
-"/": "1b48e076ee41e7a57e07f5a041adb831",
-"main.dart.js": "84f9069c60239ad56b1bf7dac1aff513",
+"index.html": "2b9ca49c6f559f7beecfa03bfec591e3",
+"/": "2b9ca49c6f559f7beecfa03bfec591e3",
+"main.dart.js": "14d0906892451382cbdc4ed3a4e1a70a",
 "manifest.json": "9de07508b5049e6206ca38d6f73f5b5d",
+"telegram-web-app.js": "2db55d684f07c95beee17f42802f772b",
 "version.json": "20b39d34b01de1d6b9d4105d01e38cf1"};
 // The application shell files that are downloaded before a service worker can
 // start.
